@@ -1110,7 +1110,6 @@
             bottom: 20px;
             left: 20px;
             z-index: 9999;
-            overflow: hidden;
             border-radius: 50%;
             width: fit-content;
             height: fit-content;
@@ -1118,15 +1117,18 @@
             align-items: center;
             justify-content: center;
             animation: n-di600 0.8s ease infinite;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            transition: transform 0.3s;
+            filter: drop-shadow(0 4px 15px rgba(0,0,0,0.3));
+            will-change: transform;
+            backface-visibility: hidden;
         }
         .i-jj231:hover {
+            animation-play-state: paused;
             transform: scale(1.1);
         }
         .n-do922 {
             width: 100px;
             height: auto;
+            display: block;
         }
         @keyframes n-di600 { 0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-8px)}40%,80%{transform:translateX(8px)} }
         @media screen and (max-width: 768px) {
@@ -1237,20 +1239,20 @@
         }
 
         .a-ij35 {
-    width: fit-content;
-    display: flex;
-    padding: 12px 24px;
-    background: #a86830;
-    color: #ffffff !important;
-    text-align: center;
-    font-weight: 700;
-    border-radius: 2px;
-    text-decoration: none;
-    font-size: 14px;
-    text-transform: uppercase;
-    transition: 0.3s;
-    cursor: pointer;
-    margin: 20px auto;
+            width: fit-content;
+            display: flex;
+            padding: 12px 24px;
+            background: #a86830;
+            color: #ffffff !important;
+            text-align: center;
+            font-weight: 700;
+            border-radius: 2px;
+            text-decoration: none;
+            font-size: 14px;
+            text-transform: uppercase;
+            transition: 0.3s;
+            cursor: pointer;
+            margin: 20px auto;
         }
         .a-ij35:hover {
             transform: scale(1.03);
@@ -1629,13 +1631,7 @@ max-width: 70px;
                 width: 100%;
                 text-align: center;
             }
-              .k-ln071{
-             display: flex;
-            }
-            header.n-gb63 .b-bo48{
-                display: none;
-            }
-        }
+                    }
         figure{
             margin: 0;
         }
@@ -1933,7 +1929,6 @@ max-width: 70px;
             bottom: 20px;
             left: 20px;
             z-index: 9999;
-            overflow: hidden;
             border-radius: 50%;
             width: fit-content;
             height: fit-content;
@@ -1941,12 +1936,15 @@ max-width: 70px;
             align-items: center;
             justify-content: center;
             animation: n-di600 0.8s ease infinite;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            filter: drop-shadow(0 4px 15px rgba(0,0,0,0.3));
+            will-change: transform;
+            backface-visibility: hidden;
             text-decoration: none;
         }
         .n-do922 {
             width: 75px;
             height: auto;
+            display: block;
         }
 
       
@@ -2523,9 +2521,7 @@ max-width: 70px;
 
 <body>
     
-    <ul class="b-bo48 f-bk92">
-                    </ul>
-
+    
     <header class="n-gb63">
         <div class="k-fb54">
             <div class="n-ki451">
@@ -2540,10 +2536,7 @@ max-width: 70px;
                     <img src="img/745385970c45b6c69f30e1e57e3c7a56.png"
                          alt="LT">
                 </div>
-                                <button class="k-ln071" aria-label="Menu">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
+                                            </div>
         </div>
     </header>
 
@@ -2574,7 +2567,7 @@ max-width: 70px;
                                 <div>
                                             <strong>Darius Černiauskas</strong>
                                                                 <span class="h-mg39">Lošimų strategas ir kazino redaktorius</span>
-                                        <span>Posledná aktualizácia: 13 gegužės 2026</span>
+                                        <span>Posledná aktualizácia: 15 gegužės 2026</span>
                                     </div>
             </div>
             
@@ -2826,8 +2819,8 @@ max-width: 70px;
     "@type": "WebPage",
     "name": "Užsienio Kazino Internete 2026 – 10 Geriausių Variantų Lietuvių Žaidėjams",
     "description": "„eCOGRA&#8221; 2023 m. audito duomenys atskleidė, kad vidutinis sertifikuotas lošimo automatų RTP per patikrintus operatorius siekė 95,72 % – tačiau rinkodara nere",
-    "datePublished": "2026-05-13",
-    "dateModified": "2026-05-13",
+    "datePublished": "2026-05-15",
+    "dateModified": "2026-05-15",
     "author": {
         "@type": "Person",
         "name": "Darius Černiauskas"
@@ -2843,7 +2836,7 @@ max-width: 70px;
                 "item": {
                     "@type": "Organization",
                     "name": "FS Casino",
-                    "description": "Gaukite iki 900 € + 400 free spin'ų"
+                    "description": "Bonusas iki 900 € + 400 nemokamų sukimų"
                 }
             },
             {
@@ -2852,7 +2845,7 @@ max-width: 70px;
                 "item": {
                     "@type": "Organization",
                     "name": "Slotoro",
-                    "description": "Bonusas iki 2.300 € + 250 nemokamų sukimų"
+                    "description": "Iki 2.300 € bonus + 250 free spin'ų"
                 }
             },
             {
@@ -2861,7 +2854,7 @@ max-width: 70px;
                 "item": {
                     "@type": "Organization",
                     "name": "FieryPlay Casino",
-                    "description": "Naujiems žaidėjams: iki 2.300 € + 350 sukimų dovanų"
+                    "description": "Registruokitės ir gaukite 2.300 € + 350 free spin'ų"
                 }
             },
             {
@@ -2870,7 +2863,7 @@ max-width: 70px;
                 "item": {
                     "@type": "Organization",
                     "name": "Hit'N'Spin Casino",
-                    "description": "Sveikinimo premija iki 800 € + 200 nemokamų sukimųsi"
+                    "description": "Gaukite iki 800 € + 200 free spin'ų"
                 }
             },
             {
@@ -2879,7 +2872,7 @@ max-width: 70px;
                 "item": {
                     "@type": "Organization",
                     "name": "Ego Games",
-                    "description": "110% bonusas iki 700 €"
+                    "description": "Gaukite 110% premija iki 700 €"
                 }
             },
             {
